@@ -1,26 +1,46 @@
+// Importar react
 import React from 'react';
-import logo from './logo.svg';
+
+// Importar componentes
+import Title from './components/Title/Title';
+import Card from './components/Card/Card';
+
+// Importar estilos
 import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+// Componente functional App
+const App = () => {
+    
+    // Codigo del componente
+
+
+
+    // Render del componente
+    return (
+        <div>
+        
+            <Title />
+            
+            <div className="cintas"> 
+                <Card 
+                    titulo={'Cinta blanca'}
+                    descripcion={'Crea tu propio sitio web y conoce los conceptos fundamentales de la programación.'}
+                    color={'blanca'}
+                />
+                <Card 
+                    titulo={'Cinta roja'}
+                    descripcion={'Desarrolla aplicaciones web robustas utilizando la arquitectura Cliente-Servidor.'}
+                    color={'roja'}
+                />
+                <Card 
+                    titulo={'Cinta negra'}
+                    descripcion={'Desarrolla las habilidades de un ingeniero de software y fortalece tus capacidades de trabajo en equipo para obtener un empleo.'}
+                    color={'negra'}
+                />
+            </div>
+        </div>
+        
+    );
 }
 
 export default App;
